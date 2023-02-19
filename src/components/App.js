@@ -6,6 +6,9 @@ function App() {
       <header className="App-header">
        <h2>Surreal Estate</h2>
       </header>
+      <body>
+        <p></p>
+      </body>
     </div>
   );
 }

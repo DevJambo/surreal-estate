@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Space+Grotesk:wght@700&display=swap');
+
+
+h2 {
+  font-family: 'Julee', cursive;
+  padding: 10px;
+  font-size: 80px;
+  margin: 10px;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgray;
+}
