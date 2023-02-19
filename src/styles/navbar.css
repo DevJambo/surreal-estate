@@ -1,0 +1,27 @@
+.Navbar {
+    background-color: white;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 20%;   
+}
+
+.navbar-links {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+.navbar-links-item {
+    margin: 0px;
+    padding-right: 90px;
+    padding-top: 50px;
+    font-size: 25px;
+    display: inline-block;
+}
