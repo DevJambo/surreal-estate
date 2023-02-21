@@ -2,3 +2,14 @@
     font-size: 50px;
     color: brown;
 }
+
+.add-property {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-property-form {
+    display: flex;
+    flex-direction: column;
+}
