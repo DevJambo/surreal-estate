@@ -11,6 +11,7 @@ const AddProperty = () => {
   const [fields, setFields] = useState(initialState.fields);
   const handleAddProperty = (event) => {
     event.preventDefault();
+    console.log(fields);
   };
   const handleFieldChange = (event) => {
     setFields({ ...fields, [event.target.name]: event.target.value });
@@ -20,15 +21,17 @@ const AddProperty = () => {
       <h2 className="add-property-header">Add Property Page</h2>
       <form className="add-property-form" onSubmit={handleAddProperty}>
         <label htmlFor="title">
-          Title
+          Title -
           <input
             id="title"
             name="title"
             value={fields.title}
+            placeholder="Property Name"
             onChange={handleFieldChange}
           />
         </label>
         <label htmlFor="city">
+          City -
           <select
             id="city"
             name="city"
@@ -42,42 +45,47 @@ const AddProperty = () => {
           </select>
         </label>
         <label htmlFor="bedrooms">
-          Bedrooms
+          Bedrooms -
           <input
             id="bedrooms"
             name="bedrooms"
             value={fields.bedrooms}
+            placeholder="Number of Bedrooms"
             onChange={handleFieldChange}
           />
         </label>
         <label htmlFor="bathrooms">
-          Bathrooms
+          Bathrooms -
           <input
-            id="Bathrooms"
-            name="Bathrooms"
+            id="bathrooms"
+            name="bathrooms"
             value={fields.bathrooms}
+            placeholder="Number of Bathrooms"
             onChange={handleFieldChange}
           />
         </label>
         <label htmlFor="price">
-          Price
+          Price (£) -
           <input
             id="price"
             name="price"
             value={fields.price}
+            placeholder="Property Asking Price"
             onChange={handleFieldChange}
           />
         </label>
         <label htmlFor="email">
-          Email
+          Email -
           <input
             id="email"
             name="email"
             value={fields.email}
+            placeholder="Contact Email"
             onChange={handleFieldChange}
           />
         </label>
         <label htmlFor="type">
+          Type -
           <select
             id="type"
             name="type"
@@ -93,7 +101,9 @@ const AddProperty = () => {
             <option value="Bungalow">Bungalow</option>
           </select>
         </label>
-        <button type="submit">Add</button>
+        <button className="submit-button" type="submit">
+          Add
+        </button>
       </form>
     </div>
   );
